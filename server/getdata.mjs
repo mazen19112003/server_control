@@ -24,6 +24,7 @@ function logErrorToFile(iloip, errorMessage) {
   fs.appendFileSync("ilo_errors.log", logMessage, "utf8");
   console.error(`❌ Error logged for ${iloip}: ${errorMessage}`);
 }
+console.log();
 
 // Function to fetch iLO details and return as an object
 export async function getILOData(iloip) {
