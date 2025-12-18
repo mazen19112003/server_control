@@ -18,6 +18,7 @@ const instance = axios.create({
     httpsAgent: new https.Agent({ rejectUnauthorized: false }),
     headers: { "Content-Type": "application/json" }
 });
+console.log();
 
 function logErrorToFile(iloip, errorMessage) {
   const logMessage = `${new Date().toISOString()} - iLO IP: ${iloip} - Error: ${errorMessage}\n`;
